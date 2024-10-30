@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Critics Corner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4d4d4d;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+        .read-more-btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .read-more-btn:hover {
+            background-color: #ff5252;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .review-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .restaurant-name {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .rating {
+            background-color: #ffd700;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .review-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-content {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .review-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: #4d4d4d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .review-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Critics Corner</h1>
+        <p>Honest reviews from food enthusiasts</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#latest">Latest Reviews</a></li>
+            <li><a href="#top">Top Rated</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="review-card">
+            <div class="review-header">
+                <h2 class="restaurant-name">La Bella Italia</h2>
+                <span class="rating">4.8/5</span>
+            </div>
+            <div class="review-meta">
+                <span>By John Smith</span> • 
+                <span>October 18, 2024</span> • 
+                <span>Italian Cuisine</span>
+            </div>
+            <img src="https://orders.co/static/99a59eec0735fca313bf2b93349bd5d6/f659b/Italian-Restaurant-Design-Creating-an-Inviting-Ambiance.png" alt="Italian dish" class="review-image">
+            <p class="review-content">
+                La Bella Italia offers an authentic Italian dining experience that transported me straight to the streets of Rome. 
+                The homemade pasta was perfectly al dente, and the sauce was rich with the perfect balance of herbs and spices. 
+                The service was impeccable, and the ambient atmosphere made for a memorable evening.
+            </p>
+            <a href="la-bella-italia-blog.html" class="read-more-btn">Read Full Review</a>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <h2 class="restaurant-name">Sushi Master</h2>
+                <span class="rating">4.5/5</span>
+            </div>
+            <div class="review-meta">
+                <span>By Sarah Johnson</span> • 
+                <span>October 15, 2024</span> • 
+                <span>Japanese Cuisine</span>
+            </div>
+            <img src="https://assets.bonappetit.com/photos/57e07ecb26bdf8de5bbcabeb/master/pass/uchi-restaurant-auston-646.jpg" alt="Sushi platter" class="review-image">
+            <p class="review-content">
+                Sushi Master proves that fresh ingredients make all the difference. Their sushi rolls are both visually stunning 
+                and delicious. The fish was exceptionally fresh, and the rice was perfectly seasoned. The presentation of each 
+                dish showed true artistry.
+            </p>
+            <a href="la-bella-italia-blog.html" class="read-more-btn">Read Full Review</a>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <h2 class="restaurant-name">Maharaja Thali</h2>
+                <span class="rating">3.5/5</span>
+            </div>
+            <div class="review-meta">
+                <span>By Sarah Johnson</span> • 
+                <span>October 11, 2024</span> • 
+                <span>Indian Cuisine</span>
+            </div>
+            <img src="https://bestofnj.com/wp-content/uploads/2023/06/Best-Indian-Restaurants-2024-Hero.jpg" alt="W3Schools.com" class="review-image">
+
+            <p class="review-content">
+                The ambiance is welcoming, and the service is generally satisfactory. While the thali portion sizes are generous, the food itself falls a bit short of expectations. The flavors are fine, but not particularly memorable or bold, lacking the authentic punch one might hope for in Indian cuisine. Some dishes feel underwhelming in terms of seasoning and spice balance. It’s a good option for a casual meal, but there are better alternatives if you're looking for a more flavorful Indian dining experience.
+            </p>
+            <a href="la-bella-italia-blog.html" class="read-more-btn">Read Full Review</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Critics Corner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
